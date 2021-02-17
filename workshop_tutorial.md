@@ -33,7 +33,7 @@ tedious works of installing, we will demonstrate using `docker-composer` to faci
 - For linux users: follow this guide [here](https://docs.docker.com/compose/install/#install-compose-on-linux-systems)
 
 ### Install airflow and components
-- Clone this repo: [docker-airflow](https://github.com/puckel/docker-airflow): `git clone https://github.com/puckel/docker-airflow`
+- Clone this repo: [docker-airflow](https://github.com/SamuelDSR/docker-airflow.git): `git clone https://github.com/SamuelDSR/docker-airflow.git`
 - Build the images: `docker build --rm --build-arg AIRFLOW_DEPS="gcp,gcp_api,kubernetes" --build-arg PYTHON_DEPS="SQLAlchemy=1.3.15" -t puckel/docker-airflow .`
 - Install all components by: `docker-compose -f docker-compose-CeleryExecutor.yml up -d`
 - Go to [airflow webserver](http://localhost:8080) for the airflow UI
